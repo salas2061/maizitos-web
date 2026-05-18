@@ -881,6 +881,31 @@ td span {
   margin-top: 4px;
 }
 
+.status-pill {
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 0.78rem;
+  font-weight: 900;
+  line-height: 1;
+  padding: 7px 10px;
+}
+
+.status-pill.sent {
+  background: #dbead2;
+  color: #2f4a30;
+}
+
+.status-pill.failed {
+  background: #f2d7cf;
+  color: #8a2c1c;
+}
+
+.status-pill.simulated,
+.status-pill.unknown {
+  background: #ead9ba;
+  color: #594322;
+}
+
 .table-action-button {
   background: #2f4a30;
   border: 0;

@@ -121,6 +121,7 @@ export async function sendReservationEmail(reservation) {
   const transporter = getTransporter();
 
   if (!transporter) {
+    console.warn('Correo de reserva en modo simulado: faltan variables SMTP.');
     await storeEmailLog({ ...message, deliveryStatus: 'simulated' });
     return { ...message, deliveryStatus: 'simulated' };
   }
@@ -134,6 +135,7 @@ export async function sendReservationEmail(reservation) {
     };
 
     await storeEmailLog(sentMessage);
+    console.log(`Correo de reserva enviado a ${reservation.email}: ${result.messageId}`);
     return sentMessage;
   } catch (error) {
     const failedMessage = {

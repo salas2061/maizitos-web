@@ -233,6 +233,7 @@ export async function renderAdminApp(root, content) {
                     <th>Hora</th>
                     <th>Personas</th>
                     <th>Contacto</th>
+                    <th>Correo</th>
                     ${currentUser.role === 'superuser' ? '<th>Acciones</th>' : ''}
                   </tr>
                 </thead>
@@ -459,12 +460,20 @@ export async function renderAdminApp(root, content) {
   function renderReservations() {
     const table = dashboardShell.querySelector('#reservations-table');
     const canDeleteReservations = currentUser.role === 'superuser';
-    const emptyColspan = canDeleteReservations ? 6 : 5;
+    const emptyColspan = canDeleteReservations ? 7 : 6;
 
     table.innerHTML = reservations.length
       ? reservations
           .map(
-            (reservation) => `
+            (reservation) => {
+              const emailStatus = {
+                sent: 'Enviado',
+                failed: 'Falló',
+                simulated: 'Simulado'
+              }[reservation.emailDeliveryStatus] || 'Sin dato';
+              const emailStatusClass = reservation.emailDeliveryStatus || 'unknown';
+
+              return `
               <tr>
                 <td>
                   <strong>${escapeHtml(reservation.name)}</strong>
@@ -474,6 +483,14 @@ export async function renderAdminApp(root, content) {
                 <td>${escapeHtml(reservation.time)}</td>
                 <td>${escapeHtml(reservation.guests)}</td>
                 <td>${escapeHtml(reservation.email)}<br />${escapeHtml(reservation.phone)}</td>
+                <td>
+                  <span class="status-pill ${escapeHtml(emailStatusClass)}">${escapeHtml(emailStatus)}</span>
+                  ${
+                    reservation.emailDeliveryError
+                      ? `<span>${escapeHtml(reservation.emailDeliveryError)}</span>`
+                      : ''
+                  }
+                </td>
                 ${
                   canDeleteReservations
                     ? `<td>
@@ -489,7 +506,8 @@ export async function renderAdminApp(root, content) {
                     : ''
                 }
               </tr>
-            `
+            `;
+            }
           )
           .join('')
       : `<tr><td colspan="${emptyColspan}">Sin reservas registradas.</td></tr>`;
