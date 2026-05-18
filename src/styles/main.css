@@ -19,6 +19,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
+  overflow-x: hidden;
 }
 
 [hidden] {
@@ -78,6 +79,28 @@ a {
   align-items: center;
   display: flex;
   gap: clamp(12px, 2vw, 26px);
+}
+
+.site-menu-button {
+  align-items: center;
+  background: #201b14;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  height: 42px;
+  justify-content: center;
+  width: 42px;
+}
+
+.site-menu-button span {
+  background: #fff8ea;
+  border-radius: 999px;
+  display: block;
+  height: 2px;
+  width: 18px;
 }
 
 .site-nav a,
@@ -968,18 +991,14 @@ td span {
 
 @media (max-width: 980px) {
   .site-header {
-    align-items: flex-start;
+    align-items: center;
     gap: 14px;
-    position: absolute;
-  }
-
-  .site-header,
-  .site-nav {
-    flex-direction: column;
+    position: fixed;
   }
 
   .site-nav {
-    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
   .intro-grid,
@@ -1001,7 +1020,9 @@ td span {
 
   .dashboard-sidebar {
     min-height: auto;
-    position: static;
+    position: sticky;
+    top: 0;
+    z-index: 12;
   }
 
   .side-nav {
@@ -1014,9 +1035,84 @@ td span {
 }
 
 @media (max-width: 760px) {
+  .site-header {
+    padding: 12px 14px;
+  }
+
+  .site-menu-button {
+    display: inline-flex;
+  }
+
+  .site-nav {
+    background: #fff8ea;
+    border: 1px solid #dfcda9;
+    border-radius: 8px;
+    box-shadow: 0 18px 44px rgba(32, 27, 20, 0.16);
+    display: none;
+    gap: 4px;
+    left: 14px;
+    padding: 8px;
+    position: absolute;
+    right: 14px;
+    top: calc(100% + 8px);
+  }
+
+  .site-header.is-open .site-nav {
+    display: grid;
+  }
+
+  .site-nav a,
+  .site-nav .nav-action {
+    border-radius: 8px;
+    display: block;
+    padding: 12px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .site-nav a {
+    color: #201b14;
+  }
+
   .hero {
-    min-height: 86vh;
-    padding-top: 240px;
+    background-position: 58% center;
+    min-height: 88vh;
+    padding: 132px 16px 46px;
+  }
+
+  .hero h1 {
+    font-size: 3.8rem;
+    line-height: 0.9;
+    margin-bottom: 18px;
+  }
+
+  .hero span {
+    font-size: 1.05rem;
+  }
+
+  .hero-actions,
+  .site-footer {
+    align-items: stretch;
+  }
+
+  .hero-actions .primary-action,
+  .hero-actions .secondary-action,
+  .availability-copy .primary-action,
+  .event-section .secondary-action {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .section {
+    padding: 56px 16px;
+  }
+
+  .section h2,
+  .admin-hero h1,
+  .modal-intro h2,
+  .dashboard-topbar h1 {
+    font-size: 2.35rem;
+    line-height: 1;
   }
 
   .rich-copy {
@@ -1026,13 +1122,34 @@ td span {
     padding-top: 22px;
   }
 
+  .image-band {
+    min-height: 300px;
+    padding: 34px 16px;
+  }
+
+  .menu-link {
+    gap: 18px;
+    min-height: 132px;
+    padding: 18px;
+  }
+
+  .availability-section {
+    gap: 24px;
+  }
+
+  .inline-field {
+    max-width: none;
+  }
+
   .menu-link-grid,
   .form-grid,
   .admin-list,
-  .availability-editor,
-  .metric-grid,
-  .side-nav {
+  .availability-editor {
     grid-template-columns: 1fr;
+  }
+
+  .metric-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .menu-item.compact,
@@ -1051,13 +1168,217 @@ td span {
     flex-direction: column;
   }
 
+  .reservation-modal {
+    max-height: 100vh;
+    max-height: 100dvh;
+    max-width: 100vw;
+  }
+
+  .modal-shell {
+    border-radius: 0;
+    max-height: 100vh;
+    max-height: 100dvh;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 28px 16px;
+  }
+
+  .modal-close {
+    right: 14px;
+    top: 14px;
+  }
+
+  .modal-intro {
+    padding-right: 48px;
+  }
+
   .auth-visual {
-    min-height: 440px;
+    min-height: 320px;
+  }
+
+  .auth-visual h1 {
+    font-size: 3rem;
+  }
+
+  .auth-card {
+    margin: 14px;
+  }
+
+  .dashboard-shell {
+    display: block;
+  }
+
+  .dashboard-sidebar {
+    gap: 12px;
+    padding: 12px 14px;
+  }
+
+  .dashboard-brand {
+    width: max-content;
+  }
+
+  .side-nav {
+    display: flex;
+    gap: 8px;
+    margin: 0 -14px;
+    overflow-x: auto;
+    padding: 0 14px 6px;
+    scrollbar-width: none;
+  }
+
+  .side-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .side-link {
+    flex: 0 0 auto;
+    min-height: 42px;
+    white-space: nowrap;
+  }
+
+  .public-link {
+    display: none;
+  }
+
+  .dashboard-main {
+    gap: 18px;
+    padding: 18px 14px 38px;
+  }
+
+  .dashboard-topbar {
+    align-items: stretch;
+  }
+
+  .user-chip {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .user-chip,
   .panel-heading {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .panel-heading {
+    gap: 12px;
+  }
+
+  .panel-heading .ghost-button {
+    width: 100%;
+  }
+
+  .admin-panel {
+    padding: 16px;
+  }
+
+  .metric-card {
+    min-height: 112px;
+    padding: 16px;
+  }
+
+  .table-wrap {
+    overflow: visible;
+  }
+
+  table,
+  thead,
+  tbody,
+  tr,
+  th,
+  td {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  table {
+    background: transparent;
+  }
+
+  tbody {
+    display: grid;
+    gap: 12px;
+  }
+
+  tr {
+    background: #fff8ea;
+    border: 1px solid #dfcda9;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  td {
+    border-bottom: 1px solid #dfcda9;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: minmax(94px, 0.38fr) minmax(0, 1fr);
+    padding: 12px;
+  }
+
+  td:last-child {
+    border-bottom: 0;
+  }
+
+  td::before {
+    color: #7a6429;
+    content: attr(data-label);
+    font-size: 0.72rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  td[colspan] {
+    display: block;
+  }
+
+  td[colspan]::before {
+    content: none;
+  }
+
+  .table-action-button,
+  .compact-button,
+  .row-actions button {
+    min-height: 42px;
+  }
+}
+
+@media (max-width: 460px) {
+  .brand {
+    font-size: 0.96rem;
+  }
+
+  .brand-mark {
+    height: 34px;
+    width: 34px;
+  }
+
+  .hero h1 {
+    font-size: 3.25rem;
+  }
+
+  .section h2,
+  .admin-hero h1,
+  .modal-intro h2,
+  .dashboard-topbar h1,
+  .welcome-panel h2,
+  .panel-heading h2 {
+    font-size: 2rem;
+  }
+
+  .metric-grid {
+    grid-template-columns: 1fr;
+  }
+
+  td {
+    grid-template-columns: 1fr;
+  }
+
+  td::before {
+    margin-bottom: -4px;
   }
 }

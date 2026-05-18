@@ -475,15 +475,15 @@ export async function renderAdminApp(root, content) {
 
               return `
               <tr>
-                <td>
+                <td data-label="Cliente">
                   <strong>${escapeHtml(reservation.name)}</strong>
                   <span>${escapeHtml(reservation.notes || 'Sin notas')}</span>
                 </td>
-                <td>${escapeHtml(reservation.date)}</td>
-                <td>${escapeHtml(reservation.time)}</td>
-                <td>${escapeHtml(reservation.guests)}</td>
-                <td>${escapeHtml(reservation.email)}<br />${escapeHtml(reservation.phone)}</td>
-                <td>
+                <td data-label="Fecha">${escapeHtml(reservation.date)}</td>
+                <td data-label="Hora">${escapeHtml(reservation.time)}</td>
+                <td data-label="Personas">${escapeHtml(reservation.guests)}</td>
+                <td data-label="Contacto">${escapeHtml(reservation.email)}<br />${escapeHtml(reservation.phone)}</td>
+                <td data-label="Correo">
                   <span class="status-pill ${escapeHtml(emailStatusClass)}">${escapeHtml(emailStatus)}</span>
                   ${
                     reservation.emailDeliveryError
@@ -493,7 +493,7 @@ export async function renderAdminApp(root, content) {
                 </td>
                 ${
                   canDeleteReservations
-                    ? `<td>
+                    ? `<td data-label="Acciones">
                         <button
                           class="table-action-button is-danger"
                           type="button"
@@ -555,14 +555,14 @@ export async function renderAdminApp(root, content) {
       .map(
         (user) => `
           <tr>
-            <td>
+            <td data-label="Usuario">
               <strong>${escapeHtml(user.name || user.username)}</strong>
               <span>${escapeHtml(user.username)} · ${escapeHtml(user.email || 'Sin correo')}</span>
             </td>
-            <td>${user.role === 'superuser' ? 'Superusuario' : 'Admin'}</td>
-            <td>${user.active ? 'Activo' : 'Inactivo'}</td>
-            <td>${formatDateTime(user.lastLoginAt)}</td>
-            <td>
+            <td data-label="Rol">${user.role === 'superuser' ? 'Superusuario' : 'Admin'}</td>
+            <td data-label="Estado">${user.active ? 'Activo' : 'Inactivo'}</td>
+            <td data-label="Último acceso">${formatDateTime(user.lastLoginAt)}</td>
+            <td data-label="Acción">
               ${
                 user.role === 'superuser'
                   ? '<span>Protegido</span>'

@@ -9,6 +9,11 @@ export async function renderPublicApp(root, content) {
         <span class="brand-mark">M</span>
         <span>${content.brand}</span>
       </a>
+      <button class="site-menu-button" type="button" aria-expanded="false" aria-label="Abrir navegación">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <nav class="site-nav" aria-label="Navegación principal">
         <a href="#nosotros">Nosotros</a>
         <a href="#carta">La carta</a>
@@ -169,6 +174,24 @@ export async function renderPublicApp(root, content) {
   const statusNode = root.querySelector('#reservation-status');
   const modal = root.querySelector('#reservation-modal');
   const reservationDate = reservationForm.elements.date;
+  const header = root.querySelector('.site-header');
+  const menuButton = root.querySelector('.site-menu-button');
+
+  function closeMobileNav() {
+    header.classList.remove('is-open');
+    menuButton.setAttribute('aria-expanded', 'false');
+    menuButton.setAttribute('aria-label', 'Abrir navegación');
+  }
+
+  menuButton.addEventListener('click', () => {
+    const isOpen = header.classList.toggle('is-open');
+    menuButton.setAttribute('aria-expanded', String(isOpen));
+    menuButton.setAttribute('aria-label', isOpen ? 'Cerrar navegación' : 'Abrir navegación');
+  });
+
+  root.querySelectorAll('.site-nav a, .site-nav button').forEach((item) => {
+    item.addEventListener('click', closeMobileNav);
+  });
 
   async function loadAvailableDishes() {
     dishesNode.innerHTML = '<p class="muted">Cargando platos...</p>';
