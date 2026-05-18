@@ -1,0 +1,56 @@
+[
+  {
+    "id": "res-1777734961403",
+    "name": "POMPEYO GRELLY",
+    "email": "xiabelly.ariza@pucp.edu.pe",
+    "phone": "949234989",
+    "date": "2026-05-28",
+    "time": "13:00",
+    "guests": 15,
+    "notes": "VOY A IR CON TODA MI FAMILIA",
+    "status": "confirmada",
+    "createdAt": "2026-05-02T15:16:01.403Z",
+    "emailDeliveryStatus": "sent",
+    "emailProviderMessageId": "<9d3efb48-91bc-8572-7736-34ce5eb389a1@gmail.com>",
+    "emailDeliveryError": null
+  },
+  {
+    "id": "res-1777707260455",
+    "name": "MESSI EDUARDO",
+    "email": "jose.salas.c@uni.pe",
+    "phone": "949234989",
+    "date": "2026-05-02",
+    "time": "13:00",
+    "guests": 2,
+    "notes": "QUIERO MESA CON TOFFY",
+    "status": "confirmada",
+    "createdAt": "2026-05-02T07:34:20.455Z",
+    "emailDeliveryStatus": "sent",
+    "emailProviderMessageId": "<d67ce276-75e4-f38f-623e-b2dc8a0e1450@gmail.com>",
+    "emailDeliveryError": null
+  },
+  {
+    "id": "res-1777706964436",
+    "name": "ALEXANDER ARNOLD",
+    "email": "jose.salas.c@uni.pe",
+    "phone": "949234989",
+    "date": "2026-05-02",
+    "time": "13:00",
+    "guests": 2,
+    "notes": "Quiero cerca al rio",
+    "status": "confirmada",
+    "createdAt": "2026-05-02T07:29:24.436Z"
+  },
+  {
+    "id": "res-1777703572095",
+    "name": "Xiabelly Ariza",
+    "email": "xiabelly.ariza@pucp.edu.pe",
+    "phone": "944488124",
+    "date": "2026-05-05",
+    "time": "13:00",
+    "guests": 3,
+    "notes": "",
+    "status": "confirmada",
+    "createdAt": "2026-05-02T06:32:52.095Z"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "email-res-1777734961403",
+    "from": "MAIZITOS Reservas <lamare2020@gmail.com>",
+    "to": "xiabelly.ariza@pucp.edu.pe",
+    "replyTo": "lamare2020@gmail.com",
+    "subject": "Reserva confirmada en MAIZITOS - 2026-05-28",
+    "createdAt": "2026-05-02T15:16:01.404Z",
+    "text": "Hola POMPEYO GRELLY, recibimos tu reserva en MAIZITOS.\n\nFecha: 2026-05-28\nHora: 13:00\nPersonas: 15\nTelefono: 949234989\nNotas: VOY A IR CON TODA MI FAMILIA\n\nTe esperamos.",
+    "html": "\n      <div style=\"font-family: Arial, sans-serif; color: #241b11; line-height: 1.5;\">\n        <h1 style=\"margin: 0 0 16px;\">Reserva confirmada</h1>\n        <p>Hola POMPEYO GRELLY, recibimos tu reserva en <strong>MAIZITOS</strong>.</p>\n        <table style=\"border-collapse: collapse; margin: 20px 0;\">\n          <tbody>\n            <tr>\n              <td style=\"padding: 6px 14px 6px 0;\"><strong>Fecha</strong></td>\n              <td style=\"padding: 6px 0;\">2026-05-28</td>\n            </tr>\n            <tr>\n              <td style=\"padding: 6px 14px 6px 0;\"><strong>Hora</strong></td>\n              <td style=\"padding: 6px 0;\">13:00</td>\n            </tr>\n            <tr>\n              <td style=\"padding: 6px 14px 6px 0;\"><strong>Personas</strong></td>\n              <td style=\"padding: 6px 0;\">15</td>\n            </tr>\n            <tr>\n              <td style=\"padding: 6px 14px 6px 0;\"><strong>Telefono</strong></td>\n              <td style=\"padding: 6px 0;\">949234989</td>\n            </tr>\n            <tr>\n              <td style=\"padding: 6px 14px 6px 0;\"><strong>Notas</strong></td>\n              <td style=\"padding: 6px 0;\">VOY A IR CON TODA MI FAMILIA</td>\n            </tr>\n          </tbody>\n        </table>\n        <p>Te esperamos. Si necesitas ajustar la reserva, responde este correo.</p>\n      </div>\n    ",
+    "deliveryStatus": "sent",
+    "providerMessageId": "<9d3efb48-91bc-8572-7736-34ce5eb389a1@gmail.com>"
+  },
+  {
+    "id": "email-res-1777707260455",
+    "from": "MAIZITOS Reservas <lamare2020@gmail.com>",
+    "to": "jose.salas.c@uni.pe",
+    "replyTo": "lamare2020@gmail.com",
+    "subject": "Reserva confirmada en MAIZITOS - 2026-05-02",
+    "createdAt": "2026-05-02T07:34:20.456Z",
+    "text": "Hola MESSI EDUARDO, recibimos tu reserva en MAIZITOS.\n\nFecha: 2026-05-02\nHora: 13:00\nPersonas: 2\nTelefono: 949234989\nNotas: QUIERO MESA CON TOFFY\n\nTe esperamos.",
+    "html": "\n      <div style=\"font-family: Arial, sans-serif; color: #241b11; line-height: 1.5;\">\n        <h1 style=\"margin: 0 0 16px;\">Reserva confirmada</h1>\n        <p>Hola MESSI EDUARDO, recibimos tu reserva en <strong>MAIZITOS</strong>.</p>\n        <table style=\"border-collapse: collapse; margin: 20px 0;\">\n          <tbody>\n            <tr>\n              <td style=\"padding: 6px 14px 6px 0;\"><strong>Fecha</strong></td>\n              <td style=\"padding: 6px 0;\">2026-05-02</td>\n            </tr>\n            <tr>\n              <td style=\"padding: 6px 14px 6px 0;\"><strong>Hora</strong></td>\n              <td style=\"padding: 6px 0;\">13:00</td>\n            </tr>\n            <tr>\n              <td style=\"padding: 6px 14px 6px 0;\"><strong>Personas</strong></td>\n              <td style=\"padding: 6px 0;\">2</td>\n            </tr>\n            <tr>\n              <td style=\"padding: 6px 14px 6px 0;\"><strong>Telefono</strong></td>\n              <td style=\"padding: 6px 0;\">949234989</td>\n            </tr>\n            <tr>\n              <td style=\"padding: 6px 14px 6px 0;\"><strong>Notas</strong></td>\n              <td style=\"padding: 6px 0;\">QUIERO MESA CON TOFFY</td>\n            </tr>\n          </tbody>\n        </table>\n        <p>Te esperamos. Si necesitas ajustar la reserva, responde este correo.</p>\n      </div>\n    ",
+    "deliveryStatus": "sent",
+    "providerMessageId": "<d67ce276-75e4-f38f-623e-b2dc8a0e1450@gmail.com>"
+  },
+  {
+    "id": "email-res-1777706964436",
+    "to": "jose.salas.c@uni.pe",
+    "subject": "Reserva confirmada en MAIZITOS - 2026-05-02",
+    "createdAt": "2026-05-02T07:29:24.436Z",
+    "html": "\n      <h1>Reserva confirmada</h1>\n      <p>Hola ALEXANDER ARNOLD, recibimos tu reserva en MAIZITOS.</p>\n      <p><strong>Fecha:</strong> 2026-05-02</p>\n      <p><strong>Hora:</strong> 13:00</p>\n      <p><strong>Personas:</strong> 2</p>\n      <p>Te esperamos.</p>\n    "
+  },
+  {
+    "id": "email-res-1777706006317",
+    "to": "smith@gmail.com",
+    "subject": "Reserva confirmada en MAIZITOS - 2026-05-22",
+    "createdAt": "2026-05-02T07:13:26.319Z",
+    "html": "\n      <h1>Reserva confirmada</h1>\n      <p>Hola Smith Jara Serrano, recibimos tu reserva en MAIZITOS.</p>\n      <p><strong>Fecha:</strong> 2026-05-22</p>\n      <p><strong>Hora:</strong> 13:30</p>\n      <p><strong>Personas:</strong> 2</p>\n      <p>Te esperamos.</p>\n    "
+  },
+  {
+    "id": "email-res-1777703572095",
+    "to": "xiabelly.ariza@pucp.edu.pe",
+    "subject": "Reserva confirmada en MAIZITOS - 2026-05-05",
+    "createdAt": "2026-05-02T06:32:52.096Z",
+    "html": "\n      <h1>Reserva confirmada</h1>\n      <p>Hola Xiabelly Ariza, recibimos tu reserva en MAIZITOS.</p>\n      <p><strong>Fecha:</strong> 2026-05-05</p>\n      <p><strong>Hora:</strong> 13:00</p>\n      <p><strong>Personas:</strong> 3</p>\n      <p>Te esperamos.</p>\n    "
+  },
+  {
+    "id": "email-res-1777703011118",
+    "to": "lamare2020@gmail.com",
+    "subject": "Reserva confirmada en MAIZITOS - 2026-05-02",
+    "createdAt": "2026-05-02T06:23:31.119Z",
+    "html": "\n      <h1>Reserva confirmada</h1>\n      <p>Hola Jose Salas, recibimos tu reserva en MAIZITOS.</p>\n      <p><strong>Fecha:</strong> 2026-05-02</p>\n      <p><strong>Hora:</strong> 13:00</p>\n      <p><strong>Personas:</strong> 4</p>\n      <p>Te esperamos.</p>\n    "
+  }
+]

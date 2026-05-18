@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Campo de maíz</title>
+  <desc id="desc">Ilustración temporal para la portada de MAIZITOS.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#8fb8cf"/>
+      <stop offset="1" stop-color="#f6d58b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <circle cx="1270" cy="210" r="100" fill="#f2b840"/>
+  <path d="M0 620 C260 540 470 620 720 560 C1010 490 1240 560 1600 500 L1600 1000 L0 1000 Z" fill="#5f7f38"/>
+  <path d="M0 720 C300 650 520 710 800 650 C1110 584 1340 650 1600 600 L1600 1000 L0 1000 Z" fill="#344f2c"/>
+  <g fill="none" stroke="#e7b633" stroke-linecap="round" stroke-width="14">
+    <path d="M240 900 C235 760 245 650 260 540"/>
+    <path d="M260 680 C210 635 190 600 170 550"/>
+    <path d="M260 710 C315 660 340 615 360 560"/>
+    <path d="M520 910 C510 760 530 660 560 520"/>
+    <path d="M560 690 C500 640 470 600 440 540"/>
+    <path d="M560 710 C630 660 660 610 690 540"/>
+    <path d="M900 920 C895 760 920 660 950 500"/>
+    <path d="M950 690 C890 640 860 590 820 520"/>
+    <path d="M950 710 C1020 665 1060 610 1090 530"/>
+    <path d="M1270 930 C1265 760 1290 650 1325 500"/>
+    <path d="M1325 690 C1260 640 1225 590 1190 520"/>
+    <path d="M1325 710 C1390 660 1425 610 1460 520"/>
+  </g>
+</svg>

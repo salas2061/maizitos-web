@@ -1,0 +1,34 @@
+[
+  {
+    "id": "choclo-parrillero",
+    "name": "Choclo parrillero",
+    "category": "Entradas",
+    "description": "Choclo tierno con mantequilla de hierbas y queso fresco.",
+    "price": 18,
+    "active": true
+  },
+  {
+    "id": "pachamanca-maizitos",
+    "name": "Pachamanca MAIZITOS",
+    "category": "Fondos",
+    "description": "Carnes, papas nativas, humitas y hierbas andinas.",
+    "price": 46,
+    "active": true
+  },
+  {
+    "id": "pollo-campestre",
+    "name": "Pollo campestre",
+    "category": "Fondos",
+    "description": "Pollo dorado con papas, ensalada fresca y salsa de la casa.",
+    "price": 38,
+    "active": true
+  },
+  {
+    "id": "chicha-morada",
+    "name": "Chicha morada",
+    "category": "Bebidas",
+    "description": "Refresco natural de maiz morado, pina, canela y clavo.",
+    "price": 12,
+    "active": true
+  }
+]

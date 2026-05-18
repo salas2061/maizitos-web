@@ -1,0 +1,41 @@
+[
+  {
+    "id": "c56ff8cf-a7b4-4593-84c0-d2703863b458",
+    "username": "supermaiz",
+    "name": "Xiabelly Ariza",
+    "email": "prueba@gmail.com",
+    "role": "superuser",
+    "active": true,
+    "passwordHash": {
+      "algorithm": "scrypt",
+      "salt": "m8/WMz6FRyK6ftsUgqjd1TFZfnv7GlVl",
+      "hash": "72OoiyTYS1L5Lq6KmUjx1+7NHJ1VaS91ow+JDX8npW/7nSrdyXEwl9sDmfKm8nTIIhcTBFiUFZOvZkoUtO7HkQ=="
+    },
+    "failedLoginAttempts": 0,
+    "lockedUntil": null,
+    "createdAt": "2026-05-02T07:01:35.040Z",
+    "updatedAt": "2026-05-18T01:44:24.190Z",
+    "passwordChangedAt": "2026-05-18T01:37:27.062Z",
+    "lastLoginAt": "2026-05-18T01:44:24.190Z"
+  },
+  {
+    "id": "8584fff4-6378-4865-8216-e0e3f958e502",
+    "username": "salas205",
+    "name": "Jose Salas",
+    "email": "lamare2020@gmail.com",
+    "role": "admin",
+    "active": true,
+    "passwordHash": {
+      "algorithm": "scrypt",
+      "salt": "2FixSxWubFnt1g1XI102OnMn9YD1lrHX",
+      "hash": "eGM7gImCYg+2MNBsF84yy2PNGZwDEjZbSiWEe+nhMiwia3vYYQu0y6MOhyASL1WlE/plRsFX8hod16RAehXu7w=="
+    },
+    "failedLoginAttempts": 0,
+    "lockedUntil": null,
+    "createdAt": "2026-05-02T07:08:01.790Z",
+    "updatedAt": "2026-05-18T01:37:27.062Z",
+    "passwordChangedAt": "2026-05-18T01:37:27.062Z",
+    "lastLoginAt": "2026-05-02T15:17:01.125Z",
+    "createdBy": "c56ff8cf-a7b4-4593-84c0-d2703863b458"
+  }
+]
